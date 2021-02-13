@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-fonte-family;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $main-text-cl;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+img {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+a {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
