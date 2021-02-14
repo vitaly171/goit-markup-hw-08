@@ -1,0 +1,50 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  &__item {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $icons-color;
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &:hover {
+      border: 1px solid $accent-cl;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+}
+
+//  Highlighting and focus Icon
+
+.clients__icon {
+  fill: $icons-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $accent-cl;
+  }
+}

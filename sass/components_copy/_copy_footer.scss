@@ -1,0 +1,75 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: $gray-bg;
+
+  .skills__title {
+    color: $white;
+    margin-bottom: 0;
+  }
+  .social-icons {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  .social-icons__link {
+    background-color: $soc-icon-footer-bg;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-cl;
+    }
+  }
+
+  .social-icons__svg {
+    fill: $white;
+  }
+
+  &__address {
+    margin-top: 20px;
+    font-style: normal;
+  }
+
+  &__logo {
+    color: $white;
+  }
+
+  &__address-list {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    margin-top: 9px;
+  }
+
+  &__mail-tele-address {
+    color: $rgba;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__social-thumb {
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    margin-left: 70px;
+  }
+
+  &__signature-thumb {
+    display: flex;
+    flex-direction: column;
+    margin-left: 93px;
+    width: 570px;
+    height: 86px;
+  }
+}

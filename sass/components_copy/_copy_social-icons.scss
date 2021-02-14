@@ -1,0 +1,46 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+
+  &__item {
+    display: flex;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $white;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-cl;
+    }
+  }
+}
+
+// Rules for icon SVG
+
+.social-icons__svg {
+  width: 20px;
+  height: 20px;
+  fill: $icons-color;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .social-icons__link:hover &,
+  .social-icons__link:focus & {
+    fill: $white;
+  }
+}

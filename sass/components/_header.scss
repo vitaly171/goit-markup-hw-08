@@ -3,95 +3,36 @@
 
   &__conteiner {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-  }
-
-  &__navigation {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    height: 80px;
-  }
-
-  &__item {
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
-    color: #212121;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
-
-  .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 
   .logo {
     display: block;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   &__logo {
     color: #212121;
   }
 
-  &__contact-link {
+  &__navigation {
     display: flex;
     align-items: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
+    margin-right: auto;
   }
-
-  &__contact:not(:last-child) {
-    margin-right: 30px;
+  &__item {
+    display: none;
   }
-
   &__contact {
-    align-items: center;
+    display: none;
   }
-}
 
-// Rules for icons
-
-.header__icon-mail {
-  height: 12px;
-  width: 16px;
-  margin-right: 10px;
-  fill: $main-text-cl;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  .header__contact-link:hover &,
-  .header__contact-link:focus & {
-    fill: $accent-cl;
-  }
-}
-
-.header__icon-tel {
-  height: 16px;
-  width: 10px;
-  margin-right: 10px;
-  fill: $main-text-cl;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  .header__contact-link:hover &,
-  .header__contact-link:focus & {
-    fill: $accent-cl;
+  &__menu {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
 }

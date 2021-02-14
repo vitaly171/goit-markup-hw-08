@@ -1,0 +1,68 @@
+.skills {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__text {
+    margin-top: 0%;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $main-text-cl;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    color: $title-cl;
+    text-transform: uppercase;
+  }
+}
+
+// Item Cell for SVG
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+
+    background: $bg-icons;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+// SVG icon
+
+.skills__icon-antenna {
+  &:before {
+    background-image: url(../images/icons/antenna.svg);
+  }
+}
+
+.skills__icon-clock {
+  &:before {
+    background-image: url(../images/icons/clock.svg);
+  }
+}
+
+.skills__icon-diagram {
+  &:before {
+    background-image: url(../images/icons/diagram.svg);
+  }
+}
+.skills__icon-astronaut {
+  &:before {
+    background-image: url(../images/icons/astronaut.svg);
+  }
+}

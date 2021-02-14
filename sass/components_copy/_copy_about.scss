@@ -1,0 +1,35 @@
+.about {
+  padding-bottom: 94px;
+
+  &__list {
+    .about__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: 294px;
+  }
+
+  &__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  &__overlay-text {
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    color: $text-box;
+    text-transform: uppercase;
+  }
+}
