@@ -1,6 +1,9 @@
 .about {
-  padding-bottom: 94px;
+  display: none;
 
+  @media screen and (min-width: $desktop-width) {
+    display: unset;
+  }
   &__list {
     .about__item:not(:last-child) {
       margin-right: 30px;

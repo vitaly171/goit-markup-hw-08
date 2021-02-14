@@ -482,7 +482,13 @@ textarea {
 }
 
 .about {
-  padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    display: unset;
+  }
 }
 
 .about__list .about__item:not(:last-child) {
