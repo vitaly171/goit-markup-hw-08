@@ -1,7 +1,7 @@
 .hero {
-  padding: 200px 452px;
-  max-width: 1600px;
-  max-height: 600px;
+  padding: 118px 60px;
+  max-width: 480px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: $gray-bg;
@@ -17,19 +17,39 @@
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+  @media screen and (min-width: $tablet-width) {
+    padding: 118px 204px;
+    max-width: 768px;
+    max-height: 400px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 200px 452px;
+    max-width: 1600px;
+    max-height: 600px;
+  }
+
   &__content {
-    width: 696px;
+    width: 360px;
+    @media screen and (min-width: $desktop-width) {
+      width: 696px;
+    }
   }
 
   &__title {
     margin-bottom: 0px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white;
-    text-align: center;
+
+    @media screen and (min-width: $desktop-width) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__btn {
