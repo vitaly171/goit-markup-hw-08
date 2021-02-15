@@ -7,7 +7,12 @@
   color: #ffffff;
   background-color: $gray-bg;
 
-  .skills__title {
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-transform: uppercase;
+    align-items: center;
     color: $white;
     margin-bottom: 0;
   }
@@ -18,8 +23,36 @@
 
   .container {
     display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      align-items: baseline;
+      flex-direction: unset;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: unset;
+      justify-content: flex-end;
+    }
+  }
+  .logo {
+    font-family: $logo-fonte-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    color: $accent-cl;
+    width: 154px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $desktop-width) {
+      margin-left: unset;
+      margin-right: unset;
+    }
   }
 
   .social-icons__link {
@@ -34,10 +67,23 @@
   .social-icons__svg {
     fill: $white;
   }
+  &__address-thumb {
+    @media screen and (min-width: $tablet-width) {
+      margin-left: 76px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-left: unset;
+    }
+  }
 
   &__address {
     margin-top: 20px;
     font-style: normal;
+    text-align: center;
+    @media screen and (min-width: $desktop-width) {
+      text-align: unset;
+    }
   }
 
   &__logo {
@@ -48,7 +94,11 @@
     font-style: normal;
     display: flex;
     flex-direction: column;
+    text-align: center;
     margin-top: 9px;
+    @media screen and (min-width: $desktop-width) {
+      text-align: unset;
+    }
   }
 
   &__mail-tele-address {
@@ -62,14 +112,30 @@
     display: flex;
     flex-direction: column;
     width: 206px;
-    margin-left: 70px;
+    margin-top: 60px;
+    align-items: center;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-top: unset;
+      margin-left: 165px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      margin-left: 70px;
+      align-items: unset;
+    }
   }
 
   &__signature-thumb {
     display: flex;
     flex-direction: column;
-    margin-left: 93px;
-    width: 570px;
-    height: 86px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    @media screen and (min-width: $desktop-width) {
+      margin: unset;
+      margin-left: 93px;
+      align-items: unset;
+    }
   }
 }

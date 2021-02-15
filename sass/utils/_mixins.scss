@@ -1,0 +1,12 @@
+@mixin grid-parent($width) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$width;
+  margin-top: -$width;
+}
+
+@mixin grid-child($width, $num) {
+  margin-left: $width;
+  margin-top: $width;
+  flex-basis: calc(100% / $num - $width);
+}

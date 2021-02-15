@@ -5,6 +5,7 @@
     display: unset;
   }
   &__list {
+    margin-top: 50px;
     .about__item:not(:last-child) {
       margin-right: 30px;
     }
