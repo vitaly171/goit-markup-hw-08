@@ -61,6 +61,9 @@
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0px;
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 94px 0px;
+  }
 }

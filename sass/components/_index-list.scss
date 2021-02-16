@@ -1,9 +1,29 @@
 .index-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
+  @media screen and (min-width: $tablet-width) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    justify-content: center;
+  }
+  &__item {
+    margin-bottom: 15px;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &:nth-child(n + 4) {
+      margin-bottom: 0px;
+    }
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 0px;
+    }
   }
 
   &__btn {

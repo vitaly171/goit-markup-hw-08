@@ -24,12 +24,10 @@
     <header class="header">
       <div class="container header__conteiner">
         <nav class="header__navigation">
-            <a href="index.html" class="link logo"
-              >Web<span class="header__logo">Studio</span></a
-            >
+          <a href="index.html" class="link logo">Web<span class="header__logo">Studio</span></a>
           <ul class="list">
             <li class="header__item">
-              <a href="./index.html" class="link">Студия</a>
+              <a href="./index.html" class="link ">Студия</a>
             </li>
             <li class="header__item">
               <a href="./portfolio.html" class="link current-page">Портфолио</a>
@@ -39,17 +37,16 @@
             </li>
           </ul>
         </nav>
-
-        <ul class="list heder-contact">
+    
+        <ul class="list header__list">
           <li class="header__contact">
             <a href="mailto:info@devstudio.com" class="link header__contact-link">
               <svg class="header__icon-mail">
                 <use href="./images/icons/sprite.svg#envelope"></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com</a>
           </li>
-          <li class="hader__contact">
+          <li class="header__contact">
             <a href="tel:+380961111111" class="link header__contact-link">
               <svg class="header__icon-tel">
                 <use href="./images/icons/sprite.svg#smartphone"></use>
@@ -58,6 +55,11 @@
             </a>
           </li>
         </ul>
+        <button class="header__menu">
+          <svg width="40px" height="40px" class="header__menu-icon">
+            <use href="./images/icons/sprite.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -84,7 +86,7 @@
             <li class="samples__item">
               <a href="" class="samples__link">
               <div class="samples__img-wrap">
-                <img src="./images/portfolio/1.jpg" alt="Технокряк" />
+                <img class= "samples__img" src="./images/portfolio/1.jpg" alt="Технокряк" />
 
                 <div class="samples__popup-window">
                   <p class="samples__popup-text">
@@ -102,7 +104,7 @@
             <li class="samples__item">
               <a href="" class="samples__link">
                 <div class="samples__img-wrap">
-                <img
+                <img class= "samples__img"
                 src="./images/portfolio/2.jpg"
                 alt="Постер New Orlean vs
               Golden Star"
@@ -131,7 +133,7 @@
             <li class="samples__item">
               <a href="" class="samples__link">
                 <div class="samples__img-wrap">
-              <img src="./images/portfolio/3.jpg" alt="Ресторан Seafood" />
+              <img class= "samples__img" src="./images/portfolio/3.jpg" alt="Ресторан Seafood" />
               <div class="samples__popup-window">
                 <p class="samples__popup-text">
                   - А ты правда фрилансер? Скажи что-нибудь по-фрилансерски!
@@ -148,7 +150,7 @@
             <li class="samples__item">
               <a href="" class="samples__link">
                 <div class="samples__img-wrap">
-              <img src="./images/portfolio/4.jpg" alt="Проект Prime" />
+              <img class= "samples__img" src="./images/portfolio/4.jpg" alt="Проект Prime" />
               <div class="samples__popup-window">
                 <p class="samples__popup-text">
                 Он так радовался, что у него появилась любовница, что не сдержался и рассказал жене.
@@ -164,7 +166,7 @@
             <li class="samples__item">
               <a href="" class="samples__link">
                 <div class="samples__img-wrap">
-              <img src="./images/portfolio/5.jpg" alt="Проект Boxes" />
+              <img class= "samples__img" src="./images/portfolio/5.jpg" alt="Проект Boxes" />
               <div class="samples__popup-window">
                 <p class="samples__popup-text">
                   Относись к людям так, как хочешь, потому что них@ра они не будут относиться к тебе так же, как относишься ты.
@@ -180,7 +182,7 @@
             <li class="samples__item">
               <a href="" class="samples__link">
                 <div class="samples__img-wrap">
-              <img
+              <img class= "samples__img"
                 src="./images/portfolio/6.jpg"
                 alt="Inspiration has no Borders"
               />
@@ -201,7 +203,7 @@
             <li class="samples__item">
               <a href="" class="samples__link">
                 <div class="samples__img-wrap">
-              <img
+              <img class= "samples__img"
                 src="./images/portfolio/7.jpg"
                 alt="Издание Limited Edition"
               />
@@ -224,7 +226,7 @@
             <li class="samples__item">
               <a href="" class="samples__link">
                 <div class="samples__img-wrap">
-              <img src="./images/portfolio/9.jpg" alt="Проект LAB" />
+              <img class= "samples__img" src="./images/portfolio/9.jpg" alt="Проект LAB" />
               <div class="samples__popup-window">
                 <p class="samples__popup-text">
                   В целом наблюдается отрицательный спад устойчивого роста уменьшения подъема числа заболевших на душу умерших после
@@ -241,7 +243,7 @@
             <li class="samples__item">
               <a href="" class="samples__link">
                 <div class="samples__img-wrap">
-              <img src="./images/portfolio/8.jpg" alt="Growing Business" />
+              <img class= "samples__img" src="./images/portfolio/8.jpg" alt="Growing Business" />
               <div class="samples__popup-window">
                 <p class="samples__popup-text">
                   Если вы знакомитесь в Интернете с симпатичной женщиной и на вопрос, какой у неё IQ, она отвечает: "Четвёртый…", ничего
@@ -261,7 +263,7 @@
     </main>
       <footer class="footer">
         <section class="container">
-          <div>
+          <div class="footer__address-thumb">
             <a href="index.html" class="link logo">Web<span class="footer__logo">Studio</span></a>
             <address>
               <a class="link footer__address" href="https://goo.gl/maps/m2TophCUb2dNiUJZ7" target="_blank"
@@ -277,7 +279,7 @@
             </address>
           </div>
           <div class="footer__social-thumb">
-            <h3 class="skills__title">присоединяйтесь</h3>
+            <h3 class="footer__title">присоединяйтесь</h3>
             <ul class="list social-icons">
               <li class="social-icons__item">
                 <a class="social-icons__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferer"
@@ -311,7 +313,7 @@
             </ul>
           </div>
           <div class="footer__signature-thumb">
-            <h3 class="skills__title">Подпишитесь на рассылку</h3>
+            <h3 class="footer__title">Подпишитесь на рассылку</h3>
             <form class="signature-thumb">
               <label>
                 <input class="signature-thumb__mail" type="email" name="mail" placeholder="E-mail" />
