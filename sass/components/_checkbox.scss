@@ -6,10 +6,15 @@
   margin-top: 20px;
 
   &__text {
-    margin-left: 23px;
-    font-size: 14px;
-    line-height: 1.71;
+    margin-left: 22px;
+    font-size: 12px;
+    line-height: 1.166;
     color: $main-text-cl;
+    @media screen and (min-width: $desktop-width) {
+      margin-left: 23px;
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   &__link {
     display: inline-flex;

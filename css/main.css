@@ -986,8 +986,7 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
   padding: 40px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1000,6 +999,12 @@ textarea {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__btn-close {
@@ -1034,15 +1039,22 @@ textarea {
 }
 
 .modal__title {
-  width: 448px;
-  height: 23px;
+  width: 370px;
+  height: 60px;
   margin-bottom: 0;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    width: 448px;
+    height: 23px;
+  }
 }
 
 .modal__input {
@@ -1062,7 +1074,7 @@ textarea {
 }
 
 .modal__input .modal-input-label {
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1070,6 +1082,12 @@ textarea {
           box-sizing: border-box;
   border-radius: 4px;
   outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__input .modal-input-label {
+    width: 448px;
+  }
 }
 
 .modal__comment-box {
@@ -1147,10 +1165,18 @@ textarea {
 }
 
 .checkbox__text {
-  margin-left: 23px;
-  font-size: 14px;
-  line-height: 1.71;
+  margin-left: 22px;
+  font-size: 12px;
+  line-height: 1.166;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    margin-left: 23px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link {
