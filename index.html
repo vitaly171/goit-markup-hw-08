@@ -65,7 +65,40 @@
             <use href="./images/icons/sprite.svg#menu"></use>
           </svg>
         </button>
-      </div>
+     </div>
+     <div class="header__boxmenu container">
+        <nav class="header__menu-navigation">
+          <ul class="list header__menu-list">
+            <li class="header__menu-item">
+              <a href="./index.html" class="link current-page">Студия</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <ul class="list header__menu-list">
+          <li class="header__menu-contact">
+            <a href="mailto:info@devstudio.com" class="link header__contact-link">
+              <svg class="header__menu-icon-mail">
+                <use href="./images/icons/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li class="header__menu-contact">
+            <a href="tel:+380961111111" class="link header__contact-link">
+              <svg class="header__menu-icon-tel">
+                <use href="./images/icons/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+     </div>
     </header>
     <main>
       <section class="hero">
@@ -689,6 +722,66 @@
         </form>
       </div>
     </div>
+
+  <!--Modal Menu-Window-->
+
+<div class="backdrop__menu">
+  <div class="menu-mobile">
+    <nav class="menu-mobile__nav">
+      <ul class="list">
+        <li class="menu-mobile__item">
+          <a href="./index.html" class="menu-mobile__link list">Студия</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="./portfolio.html" class="menu-mobile__link list">Портфолио</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="" class="menu-mobile__link list">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="menu-mobile__contacts list">
+      <li class="menu-mobile__contact">
+        <a href="tel:380961111111" class="menu-mobile__contact-number list">
+          +38 096 111 11 11
+        </a>
+
+      </li>
+      <li class="menu-mobile__contact">
+        <a href="mailto:info@devstudio.com" class="menu-mobile__contact-mail list">
+          info@devstudio.com
+        </a>
+      </li>
+    </ul>
+
+    <ul class="menu-mobile__social-links list">
+      <li class="menu-mobile__social-links-item">
+        <a class="menu-mobile__social-link list" href="">
+          Instagram
+        </a>
+      </li>
+      <li class="menu-mobile__social-links-item">
+        <a class="menu-mobile__social-link list" href="">
+          Twitter
+        </a>
+      </li>
+      <li class="menu-mobile__social-links-item">
+        <a class="menu-mobile__social-link list" href="">
+          Facebook
+        </a>
+      </li>
+      <li class="menu-mobile__social-links-item">
+        <a class="menu-mobile__social-link list" href="">
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
     <script src="./js/modal.js"></script>
   </body>
 </html>

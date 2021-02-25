@@ -1,9 +1,86 @@
 .header {
+  position: relative;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 
   &__conteiner {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__boxmenu {
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px;
+  }
+  &__menu-item {
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  &__menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &__menu-navigation {
+    margin-bottom: 60px;
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__menu-contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  &__menu-contact:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__menu-icon-mail {
+    height: 11.2px;
+    width: 16px;
+    margin-right: 10px;
+    fill: $main-text-cl;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .header__contact-link:hover &,
+    .header__contact-link:focus & {
+      fill: $accent-cl;
+    }
+  }
+
+  &__menu-icon-tel {
+    height: 14.94px;
+    width: 10px;
+    margin-right: 10px;
+    fill: $main-text-cl;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .header__contact-link:hover &,
+    .header__contact-link:focus & {
+      fill: $accent-cl;
+    }
   }
 
   .logo {
@@ -178,11 +255,17 @@
     display: block;
     content: "";
     position: absolute;
-    bottom: 0px;
     width: 100%;
     height: 4px;
     background-color: $accent-cl;
     border-radius: 2px;
+    bottom: -8px;
+    @media screen and (min-width: $tablet-width) {
+      bottom: 0px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      bottom: 0px;
+    }
     transform: scaleX(1);
     transition-property: transform;
     transition-duration: 250ms;
