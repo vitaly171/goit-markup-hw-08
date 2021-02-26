@@ -367,7 +367,7 @@ textarea {
   display: none;
   background-color: #ffffff;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
   -webkit-box-orient: vertical;
@@ -376,6 +376,7 @@ textarea {
           flex-direction: column;
   padding: 48px 40px;
   text-align: left;
+  z-index: 1;
 }
 
 .header__boxmenu.is-open {
@@ -390,6 +391,7 @@ textarea {
   background-color: transparent;
   border: none;
   padding: 0;
+  z-index: 11;
   cursor: pointer;
 }
 
@@ -479,48 +481,6 @@ textarea {
   fill: #2196f3;
 }
 
-.current-page {
-  color: #2196f3;
-}
-
-.current-page::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  bottom: -8px;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 768px) {
-  .current-page::after {
-    bottom: 0px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .current-page::after {
-    bottom: 0px;
-  }
-}
-
-.current-page:hover::after, .current-page:focus::after, .current-page:active::after {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-}
-
 .header__menu-address-list {
   display: block;
 }
@@ -568,6 +528,48 @@ textarea {
 .header__social-item:last-child {
   padding-right: 0px;
   border: none;
+}
+
+.current-page {
+  color: #2196f3;
+}
+
+.current-page::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  bottom: -8px;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .current-page::after {
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .current-page::after {
+    bottom: 0px;
+  }
+}
+
+.current-page:hover::after, .current-page:focus::after, .current-page:active::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
 }
 
 .hero {
