@@ -210,15 +210,15 @@
   }
 }
 
-.header__menu-btn .icon-cross {
+.header__menu-btn .icon-menu {
   display: none;
 }
 
-.header__menu-btn.is-open .icon-cross {
+.header__menu-btn.is-open .icon-menu {
   display: block;
 }
 
-.header__menu-btn.is-open .icon-menu {
+.header__menu-btn.is-open .icon-cross {
   display: none;
 }
 
