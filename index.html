@@ -165,34 +165,29 @@
               <div class="about__overlay">
                 <h3 class="about__overlay-text">Десктопные приложения</h3>
               </div>
-              <img
-                src="./images/tab_code.jpg"
-                alt="tab_code"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source srcset="./images/about/tab_code.jpg 1x,./images/about/tab_code@2x.jpg 2x">
+                <img src="./images/about/tab_code.jpg" alt="tab_code" width="370" height="294" />
+              </picture>
+              
             </li>
             <li class="about__item">
               <div class="about__overlay">
                 <h3 class="about__overlay-text">Мобильные приложения</h3>
               </div>
-              <img
-                src="./images/mobile_device.jpg"
-                alt="mobile_device"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source srcset="./images/about/mobile_device.jpg 1x,./images/about/mobile_device@2x.jpg 2x">
+                <img src="./images/about/mobile_device.jpg" alt="mobile_device" width="370" height="294" />
+              </picture>
             </li>
             <li class="about__item">
               <div class="about__overlay">
                 <h3 class="about__overlay-text">Дизайнерские решения</h3>
               </div>
-              <img
-                src="./images/tab_color.jpg"
-                alt="tab_color"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source srcset="./images/about/tab_color.jpg 1x,./images/about/tab_color@2x.jpg 2x">
+                <img src="./images/about/tab_color.jpg" alt="tab_color" width="370" height="294" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -203,12 +198,14 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__card">
-              <img class="team__img"
-                src="./images/igor.jpg"
-                alt="igor"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/team/igor.jpg 1x, ./images/team/igor@2x.jpg 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="./images/team/igor.jpg 1x, ./images/team/igor@2x.jpg 2x">
+                <img class="team__img" src="./images/team/igor.jpg"
+                  srcset="./images/team/igor.jpg 1x,./images/team/igor@2x.jpg 2x" alt="igor" width="450"
+                  loading="lazy" />
+              </picture>
               <div class="team__item-box">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__role-description" lang="en">Product Designer</p>
@@ -266,13 +263,12 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                class="team__img"
-                src="./images/olga.jpg"
-                alt="olga"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/team/olga.jpg 1x, ./images/team/olga@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="./images/team/olga.jpg 1x, ./images/team/olga@2x.jpg 2x">
+                <img class="team__img" src="./images/team/olga.jpg" srcset="./images/team/olga.jpg 1x,./images/team/olga@2x.jpg 2x"
+                  alt="olga" width="450" loading="lazy" />
+              </picture>
               <div class="team__item-box">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__role-description" lang="en">
@@ -332,13 +328,12 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-              class="team__img"
-                src="./images/nikolay.jpg"
-                alt="nikolay"
-                width="270"
-                height="260"
-              />
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="./images/team/nikolay.jpg 1x, ./images/team/nikolay@2x.jpg 2x">
+                        <source media="(min-width: 1200px)" srcset="./images/team/nikolay.jpg 1x, ./images/team/nikolay@2x.jpg 2x">
+                        <img class="team__img" src="./images/team/nikolay.jpg" srcset="./images/team/nikolay.jpg 1x,./images/team/nikolay@2x.jpg 2x"
+                          alt="nikolay" width="450" loading="lazy" />
+                      </picture>
               <div class="team__item-box">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__role-description" lang="en">Marketing</p>
@@ -396,13 +391,12 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-              class="team__img"
-                src="./images/mihail.jpg"
-                alt="mihail"
-                width="270"
-                height="260"
-              />
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="./images/team/mihail.jpg 1x, ./images/team/mihail@2x.jpg 2x">
+                        <source media="(min-width: 1200px)" srcset="./images/team/mihail.jpg 1x, ./images/team/mihail@2x.jpg 2x">
+                        <img class="team__img" src="./images/team/mihail.jpg" srcset="./images/team/mihail.jpg 1x,./images/team/mihail@2x.jpg 2x"
+                          alt="mihail" width="450" loading="lazy" />
+                      </picture>
               <div class="team__item-box">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__role-description" lang="en">UI Designer</p>
